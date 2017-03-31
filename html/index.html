@@ -1,17 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>登陆</title>
     <style>
-      html{height: 100%;}
-      body{margin: 0;height: 100%;background: #f7fafc}
-      canvas{display: block;width: 100%;height: 100%;}
+        html {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            height: 100%;
+            background: #f7fafc !important
+        }
+
+        canvas {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .body {
+            margin: 0;
+            height: 100%;
+            background: #f7fafc
+        }
+
+        .kid {
+            margin: auto;
+            padding: 30px 0 102px;
+            width: 300px;
+        }
+
+        .index-main-body {
+            margin: auto;
+            padding: 30px 0 102px;
+            width: 300px;
+        }
+
+        .index-header {
+            text-align: center;
+        }
+
+        .index-tab-navs {
+            margin-bottom: 10px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .sign-flow {
+            text-align: center;
+        }
+
+        .sign-flow .view {
+            float: none;
+            margin: auto;
+            width: 300px;
+            text-align: center;
+        }
+
+        .sign-flow .view .group-inputs {
+            padding: 1px 0;
+            border: 1px solid #d5d5d5;
+            border-radius: 3px;
+        }
+
+        .sign-flow .view .input-wrapper {
+            position: relative;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        input {
+            -webkit-appearance: textfield;
+            background-color: white;
+            -webkit-rtl-ordering: logical;
+            user-select: text;
+            cursor: auto;
+            padding: 1px;
+            border-width: 2px;
+            border-style: inset;
+            border-color: initial;
+            border-image: initial;
+        }
+
+        input, textarea, keygen, select, button {
+            text-rendering: auto;
+            color: initial;
+            letter-spacing: normal;
+            word-spacing: normal;
+            text-transform: none;
+            text-indent: 0px;
+            text-shadow: none;
+            display: inline-block;
+            text-align: start;
+            margin: 0em 0em 0em 0em;
+            font: 11px system-ui;
+        }
+
+        input, textarea, keygen, select, button, meter, progress {
+            -webkit-writing-mode: horizontal-tb;
+        }
     </style>
-  </head>
-  <body>
-    <canvas id="canvas"></canvas>
-    <script type="text/javascript" src="../js/main.js"></script>
-  </body>
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body>
+
+<canvas id="canvas"></canvas>
+<div style="position: absolute; left: 470px;top:40px;text-align: center">
+    <div class="index-main-body">
+        <div class="index-header">
+
+            <h1 class="logo hide-text">张牙舞爪</h1>
+
+            <h2 class="subtitle">与世界分享你的知识、经验和见解</h2>
+        </div>
+
+        <div class="desk-front sign-flow clearfix sign-flow-simple">
+
+            <div class="index-tab-navs">
+                <div class="navs-slider" data-active-index="1">
+                    <a href="#signup" class="">注册</a>
+                    <a href="#signin" class="active">登录</a>
+                </div>
+            </div>
+        </div>
+
+
+            <div class="view view-signin" data-za-module="SignInForm" style="display: block;">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">邮箱</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="请输入邮箱">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">密码</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="请输入密码">
+                  </div>
+                  <button type="submit" class="btn btn-primary">登录</button>
+                </form>
+          </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script type="text/javascript" src="../js/main.js"></script>
+</body>
 </html>
 </html>

@@ -3,7 +3,7 @@ class Circle{
   constructor(x, y) {
     this.x = x;
     this.y = y;
-    this.r = Math.random() * 14 + 1;
+    this.r = Math.random() * 9 + 1;
     this._mx = Math.random() * 2 - 1;
     this._my = Math.random() * 2 - 1;
   }
@@ -48,8 +48,8 @@ class currentCircle extends Circle {
   }
   drawCircle(ctx) {
     ctx.beginPath();
-    //this.r = (this.r < 14 && this.r > 1)? this.r + (Math.random() * 2 - 1): 2;
-    //ctx.arc(this.x, this.y, this.r, 0, 360);
+    this.r = (this.r < 14 && this.r > 1)? this.r + (Math.random() * 2 - 1): 2;
+    ctx.arc(this.x, this.y, this.r, 0, 360);
     ctx.closePath();
     ctx.fillStyle = 'rgba(45, 120, 244, ' + (parseInt(Math.random()*100)/100) + ')';
     ctx.fill();
@@ -97,9 +97,9 @@ let init = function (num) {
 
 window.addEventListener('load', init(80));
 window.onmousemove = function(e) {
-  e = e || window.event;
-  current_circle.x = e.clientX;
-  current_circle.y = e.clientY;
+  // e = e || window.event;
+  // current_circle.x = e.clientX;
+  // current_circle.y = e.clientY;
 }, window.onmouseout = function() {
   current_circle.x = null;
   current_circle.y = null;
